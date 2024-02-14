@@ -1,0 +1,51 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-beige: #E6DAC6;
+  --vt-c-beige-soft: #E6DAC6;
+  --vt-c-beige-mute: #E6DAC6;
+
+
+  --vt-c-divider-light-1: #32323250;
+  --vt-c-divider-light-2: #32323250;
+  --vt-c-divider-dark-1: #32323250;
+  --vt-c-divider-dark-2: #32323250;
+
+  --vt-c-text-light-2: #32323250;
+  --vt-c-text-dark-2: #32323250;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-beige);
+    --color-background-soft: var(--vt-c-beige-soft);
+    --color-background-mute: var(--vt-c-beige-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(45deg, var(--color-background), #32323250);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
